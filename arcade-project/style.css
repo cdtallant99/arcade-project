@@ -1,0 +1,120 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #39393a;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    position: relative;
+}
+
+.tile{
+    color: #63b0cd;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-border{
+    border-right: 0.2em solid whitesmoke;
+}
+
+.bottom-border{
+    border-bottom: 0.2em solid whitesmoke;
+}
+
+.strike{
+    position: absolute;
+    background-color: #da2c38;
+}
+
+.strike-row-1{
+    width: 100%;
+    height: 4px;
+    top: 15%;
+}
+
+.strike-row-2{
+    width: 100%;
+    height: 4px;
+    top: 48%;
+}
+
+.strike-row-3{
+    width: 100%;
+    height: 4px;
+    top: 83%;
+}
+
+.strike-column-1{
+    width: 4px;
+    height: 100%;
+    left: 15%;
+}
+
+.strike-column-2{
+    width: 4px;
+    height: 100%;
+    left: 48%;
+}
+
+.strike-column-3{
+    width: 4px;
+    height: 100%;
+    left: 83%;
+}
+
+.strike-diagonal-1{
+    width: 90%;
+    height: 4px;
+    top: 50%;
+    left: 5%;
+    transform: skewY(45deg);
+}
+
+.strike-diagonal-2{
+    width: 90%;
+    height: 4px;
+    top: 50%;
+    left: 5%;
+    transform: skewY(-45deg);
+}
+
+h1{
+    color: #63b0cd;
+}
+
+#game-over{
+    text-align: center;
+    border: whitesmoke 8px solid;
+    padding: 100px;
+    width: 50%;
+    margin-top: 50px;
+}
+
+h2{
+    color: #63b0cd;
+    font-size: 2em;
+    margin-top: 0px;
+}
+
+button{
+    background-color: transparent;
+    color: #63b0cd;
+    border: #63b0cd 1px solid;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
